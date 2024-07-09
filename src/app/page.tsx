@@ -75,7 +75,7 @@ const Home = () => {
           <p className='text-sm'>Dosen Pengampu: Buang Budi Wahono, S. Kom., M. Si.</p>
         </div>
         <div className="w-[30vh] h-[30vh] flex justify-center items-center image">
-          <Image src={profile} className='hover:opacity-50 duration-200' style={{width: '20vh', height: '20vh', borderRadius: '100%', objectFit: 'cover', objectPosition: 'top', transform: 'rotate(-40deg)'}} alt='profile' />
+          <Image src={profile} loading="lazy" placeholder="blur" className='hover:opacity-50 duration-200' style={{width: '20vh', height: '20vh', borderRadius: '100%', objectFit: 'cover', objectPosition: 'top', transform: 'rotate(-40deg)'}} alt='profile' />
         </div>
         <div className="-mt-4 text-sm text-center flex gap-x-8">
           <p>Gei Zhinjian Albivenanza</p>
