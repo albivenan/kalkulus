@@ -14,7 +14,7 @@ const sqrt = (value: number): number => {
   return x;
 };
 
-const atan2 = (y: number, x: number): number => {
+const atan = (y: number, x: number): number => {
   if (x > 0) return Math.atan(y / x);
   if (x < 0 && y >= 0) return Math.atan(y / x) + Math.PI;
   if (x < 0 && y < 0) return Math.atan(y / x) - Math.PI;
@@ -28,7 +28,7 @@ const radians = (derajat: number): number => derajat * Math.PI / 180.0;
 
 const kartesiusKePolar = (x: number, y: number): [number, number] => {
   const r = sqrt(x**2 + y**2);
-  const theta = derajat(atan2(y, x));
+  const theta = derajat(atan(y, x));
   return [r, theta];
 };
 
