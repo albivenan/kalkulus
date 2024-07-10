@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import profile from "../../public/albivenanza.jpg"
 
 const sqrt = (value: number): number => {
-  if (value < 0) throw new Error('Negative value');
+  if (value < 0) throw new Error('Angka bernilai negatif!');
   let x = value;
   let y = (x + value / x) / 2.0;
   while (Math.abs(x - y) > 1e-10) {
@@ -72,7 +72,7 @@ const Home = () => {
           <h2 className='font-bold'>HASIL KERJA UAS GENAP</h2>
           <h2 className='font-bold'>APLIKASI KONVERSI KOORDINAT POLAR KE KARTESIUS DAN SEBALIKNYA</h2>
           <p className='text-sm mt-'>Diselesaikan guna memenuhi tugas akhir pada mata kuliah Kalkulus II</p>
-          <p className='text-sm'>Dosen Pengampu: Buang Budi Wahono, S. Kom., M. Si.</p>
+          <p className='text-sm'>Dosen Pengampu: Buang Budi Wahono, S. Si., M. Kom.</p>
         </div>
         <div className="w-[30vh] h-[30vh] flex justify-center items-center image">
           <Image src={profile} className='hover:opacity-50 duration-200' style={{width: '20vh', height: '20vh', borderRadius: '100%', objectFit: 'cover', objectPosition: 'top', transform: 'rotate(-40deg)'}} alt='profile' />
